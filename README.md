@@ -14,15 +14,9 @@ A Laravel-inspired WordPress plugin development framework.
 
 ### 🎬 Screen Recording
 
-[▶️ Watch the demo on Loom](https://www.loom.com/share/630eeef902b5468bbfa64503b9dd532c)
+[▶️ Watch the full demo on Loom](https://www.loom.com/share/630eeef902b5468bbfa64503b9dd532c)
 
-### ▶️ Live Demo — WordPress Playground
-
-Try the plugin instantly in your browser — no installation needed:
-
-[![Open in WordPress Playground](https://img.shields.io/badge/Open%20in-WordPress%20Playground-3858e9?style=for-the-badge&logo=wordpress)](https://playground.wordpress.net/#%7B%22landingPage%22%3A%22%2Fwp-admin%2Fadmin.php%3Fpage%3Dwp-notes%23%2F%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22login%22%2C%22username%22%3A%22admin%22%2C%22password%22%3A%22password%22%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Frezwan2024%2Fwp-notes-plugin-wp-pillar-vue3%2Freleases%2Fdownload%2Fv1.0.0%2Fwp-notes.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22runPHP%22%2C%22code%22%3A%22%3C%3Fphp+require+%27%2Fwordpress%2Fwp-load.php%27%3B+wp_insert_post(%5B%27post_title%27%3D%3E%27WP+Notes+Demo+Page%27%2C%27post_content%27%3D%3E%27%5Bwp_notes%5D%27%2C%27post_status%27%3D%3E%27publish%27%2C%27post_type%27%3D%3E%27page%27%5D)%3B+%22%7D%5D%7D)
-
-**What the Playground demo shows:**
+**What the demo shows:**
 - ✅ Admin Notes Manager — create, edit, delete, search, filter, paginate
 - ✅ Public frontend — card grid with category tabs, note detail view
 - ✅ REST API with nonce authentication working end-to-end
@@ -175,8 +169,6 @@ framework/
 
 ## Known Gotchas
 
-These caught us during development — worth knowing before you start:
-
 1. **`register_uninstall_hook` does not accept Closures** — always use `['ClassName', 'method']` format:
 
 ```php
@@ -227,9 +219,9 @@ All packages are MIT licensed — compatible with GPL-2.0-or-later for WordPress
 
 ## Plugins Built on WP Pillar
 
-| Plugin | Description | Repo | db_prefix | rest_namespace |
-| ------ | ----------- | ---- | ---------- | -------------- |
-| WP Notes | Full-stack Notes Manager — Vue 3 + Vite + Eloquent ORM + REST API | [wp-notes-plugin-wp-pillar-vue3](https://github.com/rezwan2024/wp-notes-plugin-wp-pillar-vue3) | `wpn_` | `wp-notes/v1` |
+| Plugin | Description | Repo | db_prefix | rest_namespace | Framework Version |
+| ------ | ----------- | ---- | ---------- | -------------- | ----------------- |
+| WP Notes | Full-stack Notes Manager — Vue 3 + Vite + Eloquent ORM + REST API | [wp-notes-plugin-wp-pillar-vue3](https://github.com/rezwan2024/wp-notes-plugin-wp-pillar-vue3) | `wpn_` | `wp-notes/v1` | v1.0 |
 
 ---
 
